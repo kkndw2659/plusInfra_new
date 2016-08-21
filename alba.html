@@ -1,0 +1,151 @@
+http://werty.co.kr/blog/1776 (브라우저 리사이징)
+
+https://blog.outsider.ne.kr/1153 (스크립트 분기)
+
+http://www.htmldrive.net/items/demo/442/Tabbed-content-with-jQuery (무빙 백그라운드)
+
+http://2verworks.tistory.com/23 (버튼으로 열고 닫는 레이어)
+
+http://www.htmldrive.net/items/show/1121/Easy-jQuery-Modals-dialog (팝업)
+
+http://roqkffhwk.tistory.com/34 (체크박스 모두 체크)
+
+http://www.htmldrive.net/items/demo/1529/Like-Design-Samsung-site-grid-loading-effect (상품 더보기)
+
+http://www.inwebson.com/jquery/blocksit-js-dynamic-grid-layout-jquery-plugin/ (상품레이아웃)
+
+http://hackersstudy.tistory.com/41 (소스트리 git)
+
+http://manos.malihu.gr/jquery-custom-content-scroller/ (스크롤 디자인)
+
+
+<!-- 체크박스 디자인 -->
+
+    function setupLabel() {
+		//체크박스디자인
+        if ($('.label_check input').length) {
+            $('.label_check').each(function(){
+                $(this).removeClass('c_on');
+            });
+            $('.label_check input:checked').each(function(){
+                $(this).parent('label').addClass('c_on');
+            });
+        };
+		// 라디오버튼디자인
+        if ($('.label_radio input').length) {
+            $('.label_radio').each(function(){
+                $(this).removeClass('r_on');
+            });
+            $('.label_radio input:checked').each(function(){
+                $(this).parent('label').addClass('r_on');
+            });
+        };
+    };
+    $(document).ready(function(){
+        $('.label_check, .label_radio').click(function(){
+            setupLabel();
+        });
+        setupLabel();
+    });
+
+<!-- //체크박스 디자인 -->
+
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">플러스샵</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">플러스나눔</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">머니트레인</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">이벤트</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">패션의류</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">패션잡화</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">뷰티</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">식품</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">유&middot;아동/출산</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">가구/생활/건강</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
+
+<!-- Depth01 -->
+<li class='Depth01'>
+  <a href="javascript:;" class="topNav">취미/선물/꽃</a>
+  <!-- nav2depth -->
+  <?php include("Depth02.php"); ?>
+  <!-- //nav2depth -->
+</li>
+<!-- //Depth01 -->
