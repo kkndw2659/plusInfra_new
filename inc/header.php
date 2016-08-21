@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/header/header.css" media="screen" title="no title" charset="utf-8">
 <div id="header">
   <h1 class="logo">
-    <a href="#">플러스인프라</a>
+    <a href="#"><img src="/alba/img/common/logo.png" alt="logo"></a>
   </h1>
   <!-- //logo -->
 
