@@ -19,8 +19,8 @@ $(function(){
 			sendLeft = $(this).offset().left,
 			plusHeight = parseInt(plusPop.prevAll('.data_btn').height()),
 			plusWidth = parseInt(plus.outerWidth());
-			
-	
+
+
 	$('a[data-plus-id]').removeClass('on')
 	$('.nav4list').hide();
     if(plusHasV == true){
@@ -145,7 +145,7 @@ $(function(){
   	$(".info_menu li.loginAccount").css("display","none" );
   	$(".info_menu li.login").css("display","inline-block");
   });
-  
+
   $('.schIdPw').click(function(){
   	$('#member_login_w').fadeOut('fast');
   	$('#member_idpw_w').fadeIn();
@@ -180,7 +180,7 @@ $(function(){
   		$(this).stop().animate({'width': '15px'}, 300);
   	});
   	//메세지 삭제 버튼 end
-  	
+
   	//사이드메뉴
   	$(function(){
 	/*스크롤 탑*/
@@ -206,25 +206,25 @@ $(function(){
 		}
 	}
   	//사이드메뉴 end
-  	
+
   	//판매자 보기
   	$('a[data-seller-id]').click(function(){
-	  	
+
 	  	$('#' + $(this).attr('data-seller-id')).toggle();
-	  	
+
   	});
   	//판매자 보기 end
-  	
-  	//카테고리 
+
+  	//카테고리
   	$('.Depth03s a').click(function(){
 	  	var snavWidth = parseInt($(this).width());
 	  	      sWdith = parseInt($(this).next('.nav4list').width());
 	  	      halfWidth = snavWidth/2 - sWdith/2 + 14;
-	  	      
+
 	  	$(this).next('.nav4list').css({'margin-left': halfWidth + 'px'});
 	  	$(this).next('.nav4list').toggle();
   	});
-  	
+
   	$(document).ready(function(){
 	  	$('.sch_btn .sod_list').find('li').each(function(i, e){
 		  	$(this).addClass('total' + i);
@@ -232,12 +232,12 @@ $(function(){
 			  	var thisBack = $(this).css('background-image');
 			  	console.log(thisBack);
 			  	$('.sch_btn .sod_label').css({'background-image': thisBack});
-			  	
+
 		  	});
 		});
   	});
-  	
-  	
+
+
   	$('.ico_ani').click(function(){
 	  	$('.jmodal').css({'opacity': 0, 'visibility': 'hidden'});
 	  	$('a[data-plus-id]').removeClass('on')
@@ -245,7 +245,7 @@ $(function(){
 	  	$(this).parents('.aniA').find('.ani').css({'visibility': 'visible', 'opacity': 1});
 	  	$(this).parents('.aniA').find('.ani').animate({'opacity': '0', 'visibility': 'visible'}, 800);
   	});
-  	
+
   	$('.fr_list li').click(function(){
 	  	$(this).toggleClass('on');
   	});

@@ -55,22 +55,7 @@ address span.copy{display:inline-block;width:100%;margin-left:0;padding-left:0;b
 /* 공통 */
 .input_sch{display:inline-block;height:34px;line-height:34px;vertical-align:middle;border:none;padding:0 10px;float:left;}
 
-/* Mobile Device */
-/*768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서
- 이 코드가 실행됨. 미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다.*/
+/* 모바일 */
+@media all and (max-width:1024px){
 
-/* Tablet & Desktop Device */
-@media all and (min-width:768px){
-/*사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
-}
-
-
-@media all and (min-width:768px) and (max-width:1140px){
-	
-}
-
-/* Desktop Device */
-@media all and (min-width:1140px){
-/*사용자 해상도가 1025px 이상일 때 이 코드가 실행됨.
- 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다.*/
 }

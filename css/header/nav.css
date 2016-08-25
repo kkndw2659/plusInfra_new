@@ -85,22 +85,8 @@
 .todayEvent .bx-prev{position:absolute;top:70px;left:25px;text-indent:-9999em;width:17px;height:33px;background:url(/alba/img/nav/prevEvent.png) no-repeat 0 0;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media all and (max-width:1024px){
+.nav1depth .Depth01.allnav{display:none;}
+.nav .nav1depth{width:100%;margin:0 auto;overflow-x:scroll;overflow-y:hidden;}
+#snav_w{display:none;}
+}

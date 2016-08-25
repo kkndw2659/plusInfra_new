@@ -3,7 +3,12 @@
   <h2 class="blind">사용자메뉴</h2>
 
   <ul>
-    <li>
+    <li class="info_sch">
+      <a href="javascript:;" class="sch btn_info">
+        페이지검색
+      </a>
+    </li>
+    <li class="info_cart">
       <a href="javascript:;" class="cart data_btn btn_info vertical" data-plus-id="mycart">
         장바구니
       </a>
@@ -11,7 +16,7 @@
       <?php include("cart.php"); ?>
       <!-- //장바구니 -->
     </li>
-    <li>
+    <li class="info_mypage">
       <a href="javascript:;" class="mypage data_btn btn_info vertical" data-plus-id="mypage_info">
         마이페이지
       </a>
