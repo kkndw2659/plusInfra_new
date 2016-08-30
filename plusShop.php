@@ -38,16 +38,16 @@
       <!-- header -->
       <?php include("./inc/header.php"); ?>
       <!-- //header -->
-      <br>
+      <hr>
       <!-- container -->
       <div id="container">
         <h2 class="blind">본문영역</h2>
-		<!--    plusShop    -->
-		<div id="plusShop_header">
-			<?php include("./inc/plus_header.php"); ?>
-		</div>
-		<!--  //plusShop    -->
-		
+    		<!--    plusShop    -->
+    		<div id="plusShop_header">
+    			<?php include("./inc/plus_header.php"); ?>
+    		</div>
+    		<!--  //plusShop    -->
+
         <!-- content_start -->
         <div class="content_start">
 	        <?php include("./inc/item.php"); ?>
@@ -55,11 +55,11 @@
         <!-- //content_start -->
       </div>
       <!-- //container -->
-      <br>
+      <hr>
       <!-- footer -->
       <?php include("./inc/footer.php"); ?>
       <!-- footer -->
-      
+
 	  <!--   side button     -->
 	  <div  class="side_button">
 	  	<ul>
@@ -81,7 +81,7 @@
     <?php include("./inc/member_join03.php"); ?>
     <?php include("./inc/member_join04.php"); ?>
     <!-- 멤버 인클루드 -->
-    
+
 	<!--   타일박스   -->
 	<?php include("./inc/item_note.php"); ?>
 	<!--  //타일박스  -->

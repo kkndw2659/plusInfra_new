@@ -24,4 +24,8 @@
   <!--   allcategoty -->
   <?php include("allcategory.php"); ?>
   <!-- //allcategoty -->
+  
+  <!--   mobildAllcategory --> 
+  <?php include("mobildAllcategory.php"); ?>
+  <!--   mobildAllcategory -->
 </div>

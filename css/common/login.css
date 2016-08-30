@@ -1,6 +1,6 @@
 /* login */
-.member_w{visibility:visible;position:absolute;top:147px;left:50%;width:405px;text-align:center;margin-left:-203px;z-index:999;display:none;}
-.member_wz{visibility:visible;position:absolute;top:147px;left:50%;width:986px;text-align:center;margin-left:-493px;z-index:999;display:none;}
+.member_w{visibility:visible;position:absolute;top:147px;left:50%;width:405px;text-align:center;margin-left:-203px;z-index:999;display:none;padding-bottom:100px;}
+.member_wz{visibility:visible;position:absolute;top:147px;left:50%;width:986px;text-align:center;margin-left:-493px;z-index:999;display:none;padding-bottom:100px;}
 .member_title{display:inline-block;width:194px;height:37px;text-indent:-9999em;font-size:0;color:#fff;background:url(/alba/img/login/logo.png) no-repeat 0 0;}
 .member_pop{display:inline-block;width:100%;margin:23px 0 0 0;background:#fff;border-radius:5px;box-shadow:5px 5px 30px #888;}
 .sns_login{display:inline-block;width:100%;height:127px;border-bottom:1px solid #d8d8d8;padding:28px 0 0 0;text-align:center;}
@@ -82,4 +82,61 @@
 .join_btn{padding:20px 0;clear:both;}
 .join_pager{position:absolute;top:86px;left:50%;margin-left:-24px;}
 
-#mask{position:fixed;top:0;left:0;width:100%;height:100%;background:url(/alba/img/common/mask.png) repeat 0 0;z-index:999;overflow:hidden;display:none;}
+#mask{position:fixed;top:0;left:0;width:100%;height:100%;background:url(/alba/img/common/mask.png) repeat 0 0;z-index:999;overflow:scroll;display:none;}
+.M_member_title{display:none;}
+.mobile_guide{display:none;}
+#member_footer{display:none;}
+.concern_check_M{display:none;}
+
+@media all and (max-width:1024px){
+  .member_w, .member_wz{visibility:visible;position:absolute;top:0;left:0;
+    width:100%;height:100%;text-align:center;z-index:999;background:#fff;display:none;margin:0;padding:0;background:#f5f5f5;}
+  #member_w .member_pop{}
+  .member_title{display:none;}
+  .M_member_title{position:relative;display:inline-block;width:100%;height:64px;line-height:64px;border-bottom:2px solid #e6e6e6;}
+  .M_member_title a.back{position:absolute;top:20px;left:10px;display:inline-block;height:23px;}
+  .M_member_title a.close{position:absolute;top:20px;right:10px;display:inline-block;height:23px;}
+  .M_member_title a img{float:left;}
+  .M_member_title span{display:inline-block;width:194px;height:37px;background:url(/alba/img/login/logo.png) no-repeat 0 0;}
+
+  #member_join .pop_title{padding:48px 0 0 0;}
+  #member_join .join_input{width:290px;margin:0 auto;text-align:center;display:block;}
+  #member_join02 .join_btn{padding-bottom:200px;}
+  #member_join04 .join_btn{padding-bottom:200px;}
+  .guide_txt2{display:none;}
+  .mobile_guide{display:inline-block;padding:22px 0 0 0;}
+  .mobile_guide p{font-size:16px;line-height:23px;font-weight:700;}
+  .mobile_guide span{font-size:14px;line-height:20px;}
+  #member_join03 .concern_check{display:none;}
+  #member_join03 .concern_check_M{display:block;width:237px;height:259px;margin:20px auto;padding:10px;border:1px solid #e6e6e6;overflow-y:auto;}
+  #member_join03 .chk_list_block{display:inline-block;width:100%;padding:0;}
+  #member_join03 .chk_list_block .chk_list{display:inline-block;width:100%;padding:0;float:left;}
+  #member_join03 .concern_check_M strong{width:220px;}
+  #member_join03 .concern_check_M strong em{width:35px;float:right;text-align:center;font-size:12px;color:#000;height:35px;line-height:35px;}
+  #member_join03 .concern_check_M ul{display:none;width:200px;margin-left:17px;padding:0 0 10px 0;}
+
+
+  #member_footer{position:relative;width:100%;}
+  .member_pop{border:none;box-shadow:none;margin:0;}
+  .member_pop_box01{margin:0;padding:0;}
+  .sns_login{display:inline-block;width:100%;height:auto;margin:0;padding:24px 0;border-bottom:2px solid #e6e6e6;}
+  .sns_login a{display:block;margin:9px auto;float:none;}
+  address{width:100% !important;text-align:center;}
+  address span.first{margin:0;padding:0;}
+  .f_logo{display:none;}
+
+  #member_idpw .tabbed_content{width:100%;}
+  #member_idpw .tabbed_content .tabs span{width:49.5%;float:left;}
+  #member_idpw .tabbed_content .tabs span.active{width:50.3%;}
+  #member_idpw .tabslider{width:100%;min-height:542px;position:relative;}
+  #member_idpw .tabslider .idpwBox{position:absolute;top:0;left:0;width:100%;}
+  #member_idpw .tabslider .idpwBox:nth-child(2n){top:0;left:100%;}
+  #member_idpw .idpwBox .ch_confirm{text-align:center;}
+  #member_idpw .idpwBox .ch_confirm li{float:none;}
+  #member_idpw .idpwBox .cfm_input{width:385px;margin:0 auto;}
+
+}
+
+@media all and (max-width:767px){
+  #member_join03 .join_btn a{margin-bottom:3px;}
+}

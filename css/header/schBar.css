@@ -60,10 +60,18 @@
 
 /* 모바일 */
 @media all and (max-width:1024px){
-.search_bar{display:inline-block;width:calc(100% - 304px);height:34px;margin:20px 0 0 0;border:none;}
+.search_bar{display:inline-block;width:calc(100% - 446px);height:34px;margin:20px 0 0 0;border:none;}
 .sch_btn{display:none;}
 .searchWord_box{display:none;}
-.select_array{display:block;width:200px;margin:0 auto;padding:0;float:none;background:url(*)}
+.select_array{display:block;width:140px;margin:0 auto;padding:0;float:none;background:url(*)}
 .select_array .sod_select{width:140px;background:none;}
 .select_array .sod_label{font-size:16px;}
+}
+@media all and (max-width:767px){
+.search_bar{display:inline-block;width:calc(100% - 446px);height:17px;margin:10px 0 0 0;border:none;}
+.sch_btn{display:none;}
+.searchWord_box{display:none;}
+.select_array{display:block;width:98px;margin:0 auto;padding:0;float:none;background:url(*)}
+.select_array .sod_select{width:98px;height:17px;line-height:17px;background:none;}
+.select_array .sod_label{font-size:11px;}
 }

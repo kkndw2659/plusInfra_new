@@ -9,7 +9,10 @@
         <li><a href="#"><img src="/alba/img/ico/sns_tb.png" alt="텀블" /></a></li>
         <li><a href="#"><img src="/alba/img/ico/sns_gl.png" alt="구글플러스" /></a></li>
         <li>
-        	<a href="javascript:;" class="data_btn vertical" data-plus-id="item_share_fr">
+        	<a href="javascript:;" class="data_btn vertical fr_mg" data-plus-id="item_share_fr">
+	        	<img src="/alba/img/ico/sns_ps.png" alt="쪽지보내기" />
+	        </a>
+          <a href="javascript:;" class="mshare">
 	        	<img src="/alba/img/ico/sns_ps.png" alt="쪽지보내기" />
 	        </a>
         </li>

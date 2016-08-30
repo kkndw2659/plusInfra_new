@@ -57,5 +57,83 @@ address span.copy{display:inline-block;width:100%;margin-left:0;padding-left:0;b
 
 /* 모바일 */
 @media all and (max-width:1024px){
+html,body{width:100%;height:100%;}
+#wrap{position:relative;display:inline-block;width:100%;height:auto;}
 
+#header{position:fixed;top:0;left:0;width:100%;height:116px;background:#fff;z-index:999;}
+.logo{display:inline-block;width:199px;height:37px;float:left;margin:15px 0 0 55px;}
+#container{position:relative;top:0;left:0;width:100%;padding:126px 0 0 0;overflow:hidden;}
+
+/* side_button */
+.side_button{position:fixed;bottom:170px;right:10px;display:none;}
+.side_button li{padding:5px 0;}
+
+/* plusShop */
+#plusShop_header{position:relative;display:block;margin:0 14px;height:auto;padding:0 0 15px 0;border-bottom:1px solid #ebe6e6;}
+.seller_profile{display:block;margin:0 20px;float:none;}
+.seller_icon{display:inline-block;width:69px;height:69px;border-radius:50%;float:left;}
+.seller_icon img{border-radius:50%;}
+
+.seller_tit{display:inline-block;width:240px;float:none;margin:0 0 0 10px;}
+.seller_tit em{display:block;font-size:12px;color:#b2b2b2;font-weight:700;padding:2px 0;}
+.seller_tit strong{display:block;font-size:20px;color:#000;font-weight:700;padding:2px 0;}
+.seller_tit span{display:inline-block;height:22px;line-height:22px;font-size:17px;color:#0faae4;font-weight:700;padding:2px 0 0 30px;background:url(/alba/img/ico/ico_won.png) no-repeat 0 50%;}
+
+.seller_info_w{width:100%;display:block;}
+.seller_info{display:block;width:300px;height:47px;margin:0 auto;padding:25px 0;float:none;}
+.seller_info li{display:inline-block;width:60px;text-align:center;float:left;}
+.seller_info li a{display:inline-block;}
+.seller_info li em.count{display:inline-block;width:100%;font-size:15px;color:#b2b2b2;margin:10px 0 0 0;font-weight:700;}
+
+.seller_guide{display:block;padding:0 40px;font-size:13px;line-height:auto;color:#b2b2b2;font-weight:700;}
+.seller_btn{position:absolute;top:20px;right:30px;}
+}
+@media all and (max-width:767px){
+html,body{width:100%;height:100%;}
+#wrap{position:relative;display:inline-block;width:100%;height:auto;}
+
+#header{position:fixed;top:0;left:0;width:100%;height:58px;background:#fff;z-index:999;}
+.logo{display:inline-block;width:100px;height:37px;float:left;margin:8px 0 0 28px;}
+.logo img{width:100%;}
+#container{position:relative;top:0;left:0;width:100%;padding:68px 0 0 0;overflow:hidden;}
+
+/*footer*/
+.fnb{padding:10px 0;margin:0 10px;display:inline-block;width:auto;}
+.fnb li{display:inline-block;float:left;padding:0 10px 0 10px;background:url(/alba/img/common/bu_fnb.gif) no-repeat 0 50%;}
+.fnb li.first{padding-left:0;background:none;}
+.fnb li.end{padding-right:0;}
+.fnb li a{font-size:11px;font-weight:700;}
+address{margin:0 5px;width:310px;clear:both;text-align:left;}
+address span{line-height:13px;font-size:10px;margin:0;padding:0;background:none;display:inline-block;}
+address span.first{margin-left:0;padding-left:0;background:none;}
+address span.bgblock{background:#b2b2b2;color:#fff;}
+address span.copy{display:inline-block;width:100%;margin-left:0;padding-left:0;background:none;}
+.f_logo{display:none;}
+
+/* side_button */
+.side_button{position:fixed;bottom:170px;right:5px;display:none;}
+.side_button li{padding:5px 0;}
+.side_button li a img{width:25px;}
+
+/* plusShop */
+#plusShop_header{position:relative;display:block;margin:0 7px;height:auto;padding:0 0 8px 0;border-bottom:1px solid #ebe6e6;}
+.seller_profile{display:block;margin:0 10px;float:none;}
+.seller_icon{display:inline-block;width:35px;height:35px;border-radius:50%;float:left;}
+.seller_icon img{border-radius:50%;width:100%}
+
+.seller_tit{display:inline-block;width:auto;float:none;margin:0 0 0 5px;}
+.seller_tit em{display:block;font-size:11px;color:#b2b2b2;font-weight:700;padding:2px 0;}
+.seller_tit strong{display:block;font-size:14px;color:#000;font-weight:700;padding:2px 0;}
+.seller_tit span{display:inline-block;height:16px;line-height:16px;font-size:12px;color:#0faae4;font-weight:700;padding:1px 0 0 15px;background:url(/alba/img/ico/ico_won.png) no-repeat 0 50%;background-size:12px 11px}
+
+.seller_info_w{width:100%;display:block;}
+.seller_info{display:block;width:150px;height:24px;margin:0 auto;padding:13px 0;float:none;}
+.seller_info li{display:inline-block;width:30px;text-align:center;float:left;}
+.seller_info li a{display:inline-block;}
+.seller_info li a img{width:15px;}
+.seller_info li em.count{display:inline-block;width:100%;font-size:12px;color:#b2b2b2;margin:5px 0 0 0;font-weight:700;}
+
+.seller_guide{display:block;padding:0 20px;font-size:11px;line-height:15px;color:#b2b2b2;font-weight:700;text-align:left;}
+.seller_btn{position:absolute;top:5px;right:8px;}
+.seller_btn a{width:78px !important;height:16px;line-height:16px;font-size:12px;}
 }

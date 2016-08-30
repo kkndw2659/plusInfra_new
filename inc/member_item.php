@@ -14,7 +14,7 @@
         30%
       </dd>
     </dl>
-    
+
 	<!--   pick   -->
     <div class="pick">
       <ul>
@@ -29,7 +29,10 @@
           </a>
         </li>
         <li>
-          <a href="javascript:;" data-plus-id="item_tag"  class="data_btn vertical">
+          <a href="javascript:;" data-plus-id="item_tag"  class="data_btn vertical tag">
+            <img src="/alba/img/ico/ico_tag.png" alt="태그추가하기">
+          </a>
+          <a href="javascript:;" class="Mtag">
             <img src="/alba/img/ico/ico_tag.png" alt="태그추가하기">
           </a>
           <?php include("./inc/item_tag.php"); ?>
@@ -48,6 +51,6 @@
 	<!--   //pick   -->
   </div>
   <!--  //pd_sec  -->
-  
+
   <?php include("./inc/item_viewSeller.php"); ?>
 </div>

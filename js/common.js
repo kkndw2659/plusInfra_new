@@ -85,11 +85,17 @@ $(function(){
 
   // data-plus-id 이외에 클릭시 이벤트
   $(document).click(function(event) {
-    if (!$(event.target).closest(".jmodal, a[data-plus-id], .jmodal_seller, a[data-seller-id], .nav4list, .Depth03s a").length) {
+    if (!$(event.target).closest(".jmodal, a[data-plus-id], .jmodal_seller, a[data-seller-id], .nav4list, .Depth03s a, #MallCate, .MallCate, .Mtag, .mshare, .info_sch, #Mitem").length) {
+      $('body').css('overflow', 'auto');
+      $('#wrap').css('overflow', 'auto');
       $('a[data-plus-id]').removeClass('on');
       $('.jmodal').css({'opacity': 0, 'visibility': 'hidden'});
       $('.jmodal_seller').hide();
       $('.nav4list').hide();
+      $('#MallCate').css({'box-shadow': 'none', 'left': - $('#MallCate').width() + 'px'});
+      $('.muser_account').css({'left': - $('#MallCate').width() + 'px'});
+      $('#wrap').css({'margin-left': '0'});
+      $('#header').css({'left': '0', 'z-index': '999'});
     }else{
       //이벤트발생하면 안됨
     }
@@ -97,13 +103,13 @@ $(function(){
   //body click event
 
   //슬라이딩 팝업(로그인 및 회원가입 등 )
-  $(".popOpen[data-member-id]").click(function(){
+  $(".popOpen").click(function(){
   	var boxOne = $(this).attr("data-member-id");
   		boxId = $("#" + boxOne);
   		boxIdTop = parseInt($(boxId).css('top'));
 
-  		console.log(boxIdTop);
-  		$('html,body').animate({
+      $('html, body').css({'overflow': 'auto', 'height': '100%'});
+      $('html,body').animate({
 	  		scrollTop: boxIdTop - 147 + 'px'
   		});
   		$("#mask").fadeIn("fast", function(){
@@ -174,17 +180,17 @@ $(function(){
 
 
   //메세지 삭제 버튼
-  	$('.note_list li a.delete').mouseenter(function(){
+  	$('a.delete').mouseenter(function(){
   		$(this).stop().animate({'width': '39px'}, 150);
   	}).mouseleave(function(){
   		$(this).stop().animate({'width': '15px'}, 300);
   	});
   	//메세지 삭제 버튼 end
 
-  	//사이드메뉴
-  	$(function(){
+  //사이드메뉴
+  $(function(){
 	/*스크롤 탑*/
-		$("div.side_button").fadeOut("slow");
+	$("div.side_button").fadeOut("slow");
 		$(window).scroll(function(){
 			setTimeout(scroll_top, 1000);//화살표가 반응하여 생기는 시간
 		});
@@ -232,9 +238,8 @@ $(function(){
 			  	var thisBack = $(this).css('background-image');
 			  	console.log(thisBack);
 			  	$('.sch_btn .sod_label').css({'background-image': thisBack});
-
 		  	});
-		});
+		  });
   	});
 
 
@@ -252,5 +257,87 @@ $(function(){
   	$('.allfr').click(function(){
 	  	$('.fr_list li.fr').toggleClass('on');
   	});
+
+
+  	//모바일 네비
+  	var NlineWidth = $('.nav1depthM .Depth01:first-child .topNav').outerWidth();
+  	$("#navbg span").css({"width": NlineWidth + "px"});
+  	$(".nav1depthM .Depth01 .topNav").click(function(){
+	  	var NlineLeft = parseInt($(this).offset().left),
+	  		NlineW = parseInt($(this).outerWidth());
+
+	  	$('.nav1depthM .Depth01 .topNav').removeClass('on');
+	  	$(this).addClass('on');
+	  	$("#navbg span").animate({"left": NlineLeft - 10 + "px", "width": NlineW + "px" }, 250);
+  	});
+
+    //모바일 전체 카테고리
+    $('.MallCate').click(function(){
+      $('body').css('overflow-y','hidden');
+      $('#MallCate').css('box-shadow','0 0 30px #666');
+      $('#MallCate').stop().animate({'left': '0'});
+      $('.muser_account').stop().animate({'left': '0'});
+      $('#wrap').stop().animate({'margin-left': $('#MallCate').width() + 'px' });
+      $('#header').stop().animate({'left': $('#MallCate').width() + 'px', 'z-index': '999'});
+    });
+
+    //모바일 카테고리 열고 닫기
+    $(function(){
+      $('.subCate').slideUp();
+      $('.subCate').prev('a').addClass('btcn');
+      $('.btcn em').text('+');
+
+      $('.btcn').click(function(){
+        if($(this).hasClass('on') == true){
+          $(this).find('em').text('+');
+          $(this).parent().find('.btcn').removeClass('on');
+          $(this).parent().find('.subCate').slideUp();
+          $(this).parent().find('.btcn em').text('+');
+        }else{
+          $(this).find('em').text('-');
+          $(this).addClass('on');
+          $(this).next().slideDown();
+        };
+      });
+    });
+
+    //모바일 join 관심사
+    $(function(){
+      $('.chk_list strong em').text('+');
+      $('.chk_list strong').click(function(){
+        if($(this) == $('on')){
+          $(this).find('em').text('+');
+          $(this).removeClass('on');
+          $(this).next().slideUp();
+        }else{
+          $('.chk_list strong em').text('+');
+          $('.chk_list strong').removeClass('on');
+          $('.chk_list strong').next().slideUp();
+          $(this).addClass('on');
+          $(this).find('em').text('-');
+          $(this).next().slideDown();
+        };
+      });
+    });
+
+    //모바일 태그
+    $(function(){
+      $('.Mtag').click(function(){
+        $('.mtag_box').css('visibility', 'visible');
+        $('body').css({'height': '100%', 'overflow-y': 'hidden'});
+      });
+      $('.mshare').click(function(){
+        $('.mshare_box').css('visibility', 'visible');
+        $('body').css({'height': '100%', 'overflow-y': 'hidden'});
+      });
+      $('.info_menu .info_sch').click(function(){
+        $('.msearch').css('visibility', 'visible');
+        $('body').css({'height': '100%', 'overflow-y': 'hidden'});
+      });
+      $('.mitem_tit a.back').click(function(){
+        $(this).parents('#Mitem').css('visibility', 'hidden');
+        $('body').css({'height': '100%', 'overflow-y': 'auto'});
+      });
+    });
 
 });
