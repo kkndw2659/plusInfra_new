@@ -22,54 +22,53 @@
     <script type="text/javascript" src="/alba/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="/alba/js/common.js" chartset="utf-8"></script>
     <script type="text/javascript" src="/alba/js/select/jquery.litelighter.js" charset="utf-8"></script>
-	<script type="text/javascript" src="/alba/js/select/selectordie.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="/alba/js/select/select.js" charset="utf-8"></script>
-	<script type="text/javascript">
-		$("select").selectOrDie({
-			customClass: "custom",
-			customID:    "custom"
-		});
-	</script>
+  	<script type="text/javascript" src="/alba/js/select/selectordie.min.js" charset="utf-8"></script>
+  	<script type="text/javascript" src="/alba/js/select/select.js" charset="utf-8"></script>
+  	<script type="text/javascript">
+  		$("select").selectOrDie({
+  			customClass: "custom",
+  			customID:    "custom"
+  		});
+  	</script>
     <!-- script -->
   </head>
   <body>
     <!-- wrap -->
     <div id="wrap_w">
-      <!-- header -->
-      <?php include("./inc/header.php"); ?>
-      <!-- //header -->
-      <hr>
-      <!-- container -->
-      <div id="container">
-        <h2 class="blind">본문영역</h2>
-    		<!--    plusShop    -->
-    		<div id="plusShop_header">
-    			<?php include("./inc/plus_header.php"); ?>
-    		</div>
-    		<!--  //plusShop    -->
-
-        <!-- content_start -->
-        <div class="content_start">
-	        <?php include("./inc/item.php"); ?>
+      <div id="wrap">
+        <!-- header -->
+        <?php include("./inc/header.php"); ?>
+        <!-- //header -->
+        <hr>
+        <!-- container -->
+        <div id="container">
+          <h2 class="blind">본문영역</h2>
+          <!-- content_start -->
+          <div class="content_start">
+          </div>
+          <!-- //content_start -->
         </div>
-        <!-- //content_start -->
+        <!-- //container -->
+        <hr>
+        <!-- footer -->
+        <?php include("./inc/footer.php"); ?>
+        <!-- footer -->
       </div>
-      <!-- //container -->
-      <hr>
-      <!-- footer -->
-      <?php include("./inc/footer.php"); ?>
-      <!-- footer -->
 
-	  <!--   side button     -->
-	  <div  class="side_button">
-	  	<ul>
-		  	<li><a href="#"><img src="/alba/img/ico/ico_sideA.png" alt="" /></a></li>
-		  	<li><a href="#" id="goTop"><img src="/alba/img/ico/ico_sideB.png" alt="" /></a></li>
-	  	</ul>
-	  </div>
-	  <!--   //side button     -->
+      <!-- 	 모바일 카테고리  -->
+  	  <?php include("./inc/MallCate.php"); ?>
+  	  <!-- 	//모바일 카테고리 -->
 
-      </div>
+  	  <!--   side button     -->
+  	  <div  class="side_button">
+  	  	<ul>
+  		  	<li><a href="#"><img src="/alba/img/ico/ico_sideA.png" alt="" /></a></li>
+  		  	<li><a href="#" id="goTop"><img src="/alba/img/ico/ico_sideB.png" alt="" /></a></li>
+  	  	</ul>
+  	  </div>
+  	  <!--  //side button   -->
+
+    </div>
     <!-- //wrap -->
     <div id="mask"></div>
     <div id="dum"></div>
@@ -82,9 +81,10 @@
     <?php include("./inc/member_join04.php"); ?>
     <!-- 멤버 인클루드 -->
 
-	<!--   타일박스   -->
-	<?php include("./inc/item_note.php"); ?>
-	<!--  //타일박스  -->
+  	<!--   타일박스   -->
+  	<?php include("./inc/item_note.php"); ?>
+    <?php include("./inc/Mitem.php"); ?>
+  	<!--  //타일박스  -->
 
     <script type="text/javascript">
       (function($){
