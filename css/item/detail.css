@@ -1,0 +1,119 @@
+#sub_detail{position:relative;display:block;width:1004px;margin:0 auto;}
+
+.blind{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0}
+
+/* pd_detail */
+.pd_detail{display:inline-block;width:640px;border:1px solid #ccc;border-radius:5px;box-shadow:0 0 10px #ccc;background:#fff;padding:0 0 35px 39px;}
+.detail_title{position:relative;display:inline-block;width:100%;margin-top:25px;border-bottom:1px solid #e6e6e6;}
+.detail_title strong{height:44px;line-height:44px;font-size:18px;color:#7a7a7a;font-weight:700;}
+.detail_title ul{position:absolute;top:0;right:0;width:160px;}
+.detail_title ul li{display:inline-block;float:left;margin-left:8px;}
+
+/* 상품상세이미지 */
+.detail_photo{position:relative;display:inline-block;width:100%;min-height:464px;}
+.detail_photo ul li{text-align:center;}
+.detail_photo .bx-pager{display:none;}
+.detail_photo .bx-next, .detail_photo .bx-prev{position:absolute;top:50%;width:19px;height:43px;margin-top:-21px;text-indent:-9999em;}
+.detail_photo .bx-next{right:0;background:url(/alba/img/detail/detail_img_next.png) no-repeat 0 0;}
+.detail_photo .bx-prev{left:0;background:url(/alba/img/detail/detail_img_prev.png) no-repeat 0 0;}
+.detail_photo .detail_tag{position:absolute;bottom:0;left:0;}
+.detail_photo .detail_tag li{display:inline-block;float:left;font-family:'dotum';font-size:12px;color:#717171;margin-right:14px;}
+
+
+/* 상품가격 */
+.detail_price{position:relative;display:inline-block;width:638px;border:1px solid #ccc;border-radius:3px;margin-top:25px;oveflow:hidden;}
+.consumer_price{display:inline-block;width:188px;height:66px;border:1px solid #fff;background:#f5f5f5;float:left;text-align;center;}
+.infra_discount{display:inline-block;width:197px;height:66px;border:1px solid #fff;border-left:1px solid #909090;background:#f5f5f5;float:left;text-align:center;}
+.sum_price{display:inline-block;width:247px;height:66px;border:1px solid #fff;border-left:1px solid #909090;background:#f5f5f5;text-align:center;}
+.detail_price .minus, .detail_price .equal{position:absolute;top:50%;display:inline-block;margin-top:-14px;}
+.detail_price .minus{left:177px;}
+.detail_price .equal{right:235px;}
+.detail_price div strong{display:inline-block;width:100%;text-align:center;font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:700;margin-top:17px;}
+.detail_price div span{display:inline-block;width:100%;text-align:center;font-family:'dotum';font-size:12px;color:#b2b2b2;font-weight:700;}
+.detail_price div span em{font-family:'Tahoma';font-size:18px;color:#b2b2b2;font-weight:700;}
+.detail_price div span em.dis_per{font-family:'Tahoma';font-size:18px;color:#000;font-weight:700;padding-right:10px;}
+.detail_price div span.lprice{font-family:'dotum';font-size:12px;color:#000;font-weight:700;}
+.detail_price div span.lprice em{font-family:'Tahoma';font-size:18px;color:#000;font-weight:700;padding-right:10px;}
+
+/* 세부정보 */
+.detail_info{display:inline-block;width:100%;margin-top:25px;clear:both;}
+.detail_info h4{display:inline-block;width:100%;font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:700;}
+.detail_info h4 em{font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:normal;}
+.detail_info table{margin-top:10px;}
+.detail_info table tbody th{border-top:none;border:1px solid #c8c8c8;background:#f0f0f0;font-family:'Malgun Gothic';font-size:12px;color:#7a7a7a;padding-left:18px;height:28px;line-height:28px;}
+.detail_info table tbody th.top{border-top:1px solid #c8c8c8;}
+.detail_info table tbody td{border-bottom:1px solid #c8c8c8;font-famliy:'dotum';font-size:12px;color:#7a7a7a;padding-left:20px;letter-spacing:-0.075em;}
+.detail_info table tbody td.top{border-top:1px solid #c8c8c8;}
+.detail_info table tbody td.end{border-right:1px solid #c8c8c8;}
+
+/* rating */
+.ratyli .rate{color: #ccc; font-size: 24px;}
+.ratyli .rate-empty{color: #666;}
+.ratyli.rated .rate-full{color: #fe5845;}
+.ratyli .rate-active{color: #a94039;}
+
+/* 셀슈머회원 */
+.sellsumer_member_info{display:inline-block;width:100%;margin-top:25px;padding-bottom:25px;clear:both;}
+.sellsumer_member_info dt{display:inline-block;width:158px;height:30px;line-height:30px;float:left;clear:left;padding-left:7px;font-family:'MalgunGothic';font-size:12px;color:#7a7a7a;font-weight:700;margin-top:5px;}
+.sellsumer_member_info dd{display:inline-block;width:475px;min-height:30px;float:left;font-family:'dotun';font-size:12px;color:#7a7a7a;margin-top:5px;}
+.sellsumer_member_info dd select{height:30px;border:1px solid #ccc;}
+.sellsumer_member_info dd span{display:inline-block;float:right;margin-right:10px;font-family:'dotum';font-size:12px;color:#7a7a7a;}
+.sellsumer_member_info dd span em{font-fmaily:'Tahoma';font-size:24px;color:#ea0001;font-weight:bold;}
+
+/* 적립금 지급안내 */
+.reserves_guide{width:598px;margin:0 auto;border:1px solid #e5e5e5;padding:10px;}
+.reserves_guide h4{display:inline-block;width:100%;font-family:'MalgunGothic';font-size:14px;color:#ea2c25;font-weight:700;}
+.reserves_guide ul{display:inline-block;width:100%;margin-top:10px;}
+.reserves_guide ul li{display:block;line-height:14px;padding:0 0 5px 10px;background:url(/alba/img/detail/bu_row.gif) no-repeat 0 4px;font-family:'dotum';font-size:11px;color:#a9a9a9;letter-spacing:-0.075em;}
+.reserves_guide p{display:inline-block;width:100%;font-family:'dotum';font-size:11px;color:#ea2c25;letter-spacing:-0.075em;}
+
+/* 상품옵션 */
+.detail_option{display:inline-block;width:100%;margin-top:25px;}
+.detail_option > dl dt{display:inline-block;width:155px;height:28px;line-height:28px;float:left;clear:left;padding-left:10px;font-size:12px;color:#7a7a7a;font-weight:700;margin-bottom:10px;}
+.detail_option > dl dd{display:inline-block;width:462px;height:28px;float:left;text-align:left;margin-bottom:10px;}
+.detail_option > dl dd select{width:462px;height:28px;border:1px solid #ccc;float:left;}
+.all_sum_price{display:inline-block;width:620px;min-height:60px;margin:25px 10px 0 10px;border-top:1px dashed #ccc;border-bottom:1px dashed #ccc;clear:both;}
+.all_sum_price li{display:inline-block;width:100%;clear:both;}
+.all_sum_price li dt{display:inline-block;width:400px;height:60px;line-height:60px;float:left;font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:700;}
+.all_sum_price li dd.quantity{display:inline-block;width:92px;height:22px;padding:19px 0;float:left;}
+.all_sum_price li dd.quantity a{display:inline-block;width:20px;height:20px;line-height:20px;border:1px solid #c5c5c5;background:#f5f5f5;text-align:center;font-family:'dotum';font-size:11px;color:#000;float:left;}
+.all_sum_price li dd.quantity input{display:inline-block;height:20px;border:1px solid #c5c5c5;border-left:none;border-right:none;font-family:'dotum';font-size:11px;color:#7a7a7a;text-align:center;float:left;outline:none;padding:0;}
+.all_sum_price li dd.price{display:inline-block;width:103px;height:60px;line-height:60px;font-family:'Tahoma';font-size:17px;color:#ea0001;font-weight:700;text-align:right;float:left;}
+.all_sum_price li dd.delete{display:inline-block;height:60px;line-height:60px;float:left;margin-left:10px;}
+
+/* 배송비관련 */
+.delivery_price_w{position:relative;display:inline-block;width:620px;margin-top:25px;padding:0 10px;clear:both;}
+.delivery_price_w h4{font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:700;}
+.delivery_price{position:relative;display:inline-block;width:618px;border:1px solid #ccc;border-top:none;background:#f5f5f5;margin-top:10px;}
+.delivery_price .infra_sell_price{display:inline-block;width:179px;height:66px;border:1px solid #fff;border-top:2px solid #7a7a7a;text-align:center;float:left;}
+.delivery_price .d_price{display:inline-block;width:206px;height:66px;border:1px solid #fff;border-top:2px solid #7a7a7a;border-left:1px solid #7a7a7a;background:#f5f5f5;text-align:center;float:left;}
+.delivery_price .sum_price{display:inline-block;width:227px;height:66px;border:1px solid #fff;border-top:2px solid #ea0001;border-left:1px solid #7a7a7a;background:#f5f5f5;text-align:center;float:left;}
+.delivery_price .plus, .delivery_price .equal{position:absolute;top:50%;margin-top:-14px;}
+.delivery_price .plus{left:168px;}
+.delivery_price .equal{right:215px;}
+.delivery_price div strong{display:inline-block;width:100%;text-align:center;font-family:'dotum';font-size:12px;color:#7a7a7a;font-weight:700;margin-top:17px;}
+.delivery_price div span{display:inline-block;width:100%;text-align:center;font-family:'dotum';font-size:12px;color:#b2b2b2;font-weight:700;}
+.delivery_price div span em{font-family:'Tahoma';font-size:18px;color:#000;font-weight:700;}
+.delivery_price .sum_price span em{font-size:24px;color:#ea0001;font-weight:700;}
+.delivery_sch{position:absolute;top:0;right:10px;font-family:'dotum';font-size:12px;color:#7a7a7a;}
+
+/* 판촉수수료 */
+.last_reserves_fees{display:inline-block;width:620px;margin:10px 10px 0 10px;clear:both;border:1px solid #ccc;border-radius:3px;background:#f5f5f5;}
+.last_reserves_fees dt{display:inline-block;height:40px;line-height:40px;float:left;font-size:12px;color:#7a7a7a;margin-left:35px;}
+.last_reserves_fees dd{display:inline-block;float:left;margin-left:120px;}
+.last_reserves_fees dd span{display:inline-block;height:40px;line-height:40px;float:left;font-family:'dotum';font-size:12px;color:#7a7a7a;margin-left:3px;}
+.last_reserves_fees dd em{display:inline-block;height:40px;line-height:40px;float:left;margin-left:20px;font-family:'Tahoma';font-size:17px;color:#ea0001;font-weight:700;}
+
+/* 버튼그룹 */
+.detail_btn_group{display:inline-block;width:620px;margin-top:25px;padding:0 10px;clear:both;text-align:justify;}
+.detail_btn_group .btn_s{display:inline-block;width:130px;height:46px;line-height:46px;background:url(/alba/img/detail/bg_btn.png) repeat-x 0 0;border:1px solid #ccc;font-fmaily:'dotum';font-size:1;color:#606060;font-weight:700;text-align:center;margin:3px 0;float:left;}
+.detail_btn_group .btn_m{display:inline-block;width:272px;height:48px;line-height:48px;text-align:center;font-family:'dotum';font-size:15px;color:#fff;font-weight:700;background:#e60012;margin:3px 0;float:left;}
+.detail_btn_group .btn_l{display:inline-block;width:341px;height:48px;line-height:48px;text-align:center;font-family:'dotum';font-size:15px;color:#fff;font-weight:700;background:#e60012;margin:3px 0;vertical-align:middle;float:left;}
+.detail_btn_group .btn_l span{font-size:15px;color:#fff;font-weight:700;}
+.detail_btn_group .detail_plus{background-image:url(/alba/img/detail/bullet_plus.png) no-repeat center 50%;margin-left:7px}
+.detail_btn_group .detail_dib{margin:3px 7px 3px 8px;}
+.detail_btn_group .detail_dib .off{display:inline-block;}
+.detail_btn_group .detail_dib .on{display:none;}
+.detail_btn_group .detail_dib.on .on{display:inline-block;}
+.detail_btn_group .detail_dib.on .off{display:none;}
+.detail_btn_group .detail_dib img{padding-right:10px;}
